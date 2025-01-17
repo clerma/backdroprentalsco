@@ -1,0 +1,46 @@
+ <!-- jQuery -->
+<script src="/assets/js/jquery-3.6.3.min.js"></script>
+<script src="/assets/js/jquery-migrate-3.0.0.min.js"></script>
+<script src="/assets/js/modernizr-2.6.2.min.js"></script>
+<script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="/assets/js/jquery.isotope.v3.0.2.js"></script>
+<script src="/assets/js/pace.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/scrollIt.min.js"></script>
+<script src="/assets/js/jquery.waypoints.min.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
+<script src="/assets/js/jquery.stellar.min.js"></script>
+<script src="/assets/js/jquery.magnific-popup.js"></script>
+<script src="/assets/js/YouTubePopUp.js"></script>
+<script src="/assets/js/select2.js"></script>
+<script src="/assets/js/datepicker.js"></script>
+<script src="/assets/js/smooth-scroll.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+<script type="text/javascript">
+	function countdown() {
+		var now = new Date();
+		var eventDate = new Date(2025, 4, 1);
+		var currentTiime = now.getTime();
+		var eventTime = eventDate.getTime();
+		var remTime = eventTime - currentTiime;
+		var s = Math.floor(remTime / 1000);
+		var m = Math.floor(s / 60);
+		var h = Math.floor(m / 60);
+		var d = Math.floor(h / 24);
+		h %= 24;
+		m %= 60;
+		s %= 60;
+		h = (h < 10) ? "0" + h : h;
+		m = (m < 10) ? "0" + m : m;
+		s = (s < 10) ? "0" + s : s;
+		document.getElementById("days").textContent = d;
+		document.getElementById("days").innerText = d;
+		document.getElementById("hours").textContent = h;
+		document.getElementById("minutes").textContent = m;
+		document.getElementById("seconds").textContent = s;
+		setTimeout(countdown, 1000);
+	}
+	countdown();
+
+</script>
