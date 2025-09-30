@@ -1,7 +1,7 @@
 ---
 timezone: America/Chicago
 url:
-include: ['_pages', '_data','login.html','login', '_plugins']
+include: ['_pages', '_data','login.html','login', '_plugins', '_backdrops']
 sitename:
 relative_permalinks: false
 favicon:
@@ -27,6 +27,8 @@ assets:
   digest: true
 collections:
   products:
+    output: true
+  backdrops:
     output: true
 
 defaults:

@@ -26,7 +26,7 @@
 22. Slider
 23. Preloader
 24. Contact Form
-25. Grid Background
+25. Slider Grid Background
 
 ------------------------------------------------------- */
 $(function () {
@@ -53,7 +53,7 @@ $(function () {
             logo = $(".navbar .logo> img");
         if (bodyScroll > 100) {
             navbar.addClass("nav-scroll");
-            logo.attr('src', 'img/logo-dark.png');
+            logo.attr('src', 'img/logo.png');
         } else {
             navbar.removeClass("nav-scroll");
             logo.attr('src', 'img/logo.png');
@@ -327,7 +327,7 @@ $(function () {
                 items: 3
             },
             1000: {
-                items: 3
+                items: 4
             }
         }
     });
@@ -366,7 +366,6 @@ $(function () {
     $(".restaurant-menu .tabs-icon").on("click", ".owl-item", function () {
         $(this).addClass("actived").siblings().removeClass("actived");
     });
-    
     
     
     // Accordion Box (for Faqs)
@@ -497,7 +496,7 @@ $(function () {
      
 });
 
-
+ 
 // Slider  
 $(document).ready(function () {
     var owl = $('.header .owl-carousel');
@@ -568,6 +567,7 @@ $(document).ready(function () {
 });
 
 
+
 // Preloader
 $("#preloader").fadeOut(700);
 	$(".preloader-bg").delay(700).fadeOut(700);
@@ -604,7 +604,6 @@ var form = $('.contact__form'),
             data: form_data
         }).done(done_func).fail(fail_func);
     });
-
 
 // Slider Grid Background
   (function () {
